@@ -2,53 +2,233 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
 * {
-    margin: 0 auto;
+    margin: 0;
 }
 
 body {
-    height: 100vh;
-    background-color: rgb(234, 204, 173);
+    padding: 0 3em;
+    position: relative;
+
 
 }
 
+.back {
+    height: 100%;
+    width: 40%;
+    background-color: rgb(234, 204, 173);
+    position: absolute;
+    z-index: -1;
+    right: 0;
+}
 
 header {
     display: flex;
-    align-items: center
+    justify-content: space-between;
+    align-items: center;
+
 }
 
-.contenedor-logo {
-    background-color: blue;
-}
+/* INICIO
+Header Izquierdo*/
 
+.left-header {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
 
 .logo {
     height: 6.25em;
     width: 6.25em;
 }
 
-a {
-    text-decoration: none;
-    color: black;
+.nav-header {
+    width: 100%;
 }
 
 nav {
-    background-color: brown;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
-.contenedor-buy-search {
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+/* FIN
+Header Izquierdo*/
+
+/* INICIO
+Header Derecho*/
+
+.right-header {
+    display: flex;
+    justify-content: end;
+    flex: 1;
+}
+
+.box-header {
+    display: flex;
+    width: 60%;
+
+}
+
+
+.contenedor-buy-search,
+.group-icon {
+    width: 30%;
+    margin-right: 1.5em;
+    justify-content: end;
+    align-items: center;
     display: flex;
 }
 
 .icon-search,
 .icon-buy {
-    font-size: 2rem;
+    font-size: 1.25rem;
+}
+
+.group-icon {
+    position: relative;
 }
 
 .notification {
+    position: absolute;
+    background-color: white;
+    font-size: 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 1.25em;
+    height: 1.25em;
     border: 0.1em solid black;
-    border-radius: 100%;
-
-    height: 20px;
-    width: 20px;
+    border-radius: 50%;
+    right: -0.5em;
+    top: 0;
 }
+
+.divider {
+    background-color: rgb(150, 150, 150);
+    width: 0.12em;
+    height: 80%;
+}
+
+.contenedor-sign-in-up {
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sign-in,
+.sign-up {
+    background: none;
+    padding: 0.4em 1.25em;
+    border: none;
+    font-size: 1rem;
+}
+
+.sign-up {
+    border: 0.15em solid black;
+}
+
+/* FIN
+Header Derecho*/
+
+/*INICIO sección*/
+section {
+    display: flex;
+    height: 89vh;
+}
+
+/* INICIO SECCIÓN Izquierda*/
+
+.left-container {
+    display: flex;
+    flex-basis: 45%;
+    flex-direction: column;
+    justify-content: center;
+    background-color: brown;
+    height: 100%;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 6rem;
+    margin-bottom: 0.2em;
+}
+
+.button-shop {
+    border: 0.1em solid black;
+    font-size: 2rem;
+    margin-left: 0;
+    margin-bottom: 2em;
+}
+
+.detail-container {
+    display: flex;
+    margin: 2em 0;
+}
+
+.button-container {
+    margin: 2em 0;
+}
+
+.detail {
+    display: flex;
+    font-size: 1.5rem;
+    font-style: normal;
+}
+
+/*INICIO sección derecha*/
+
+.right-container {
+    flex: 1;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(218, 130, 42);
+    height: 100%;
+}
+
+
+.image-container {
+    background-color: rgb(105, 105, 236);
+}
+
+
+.img-edt {
+    border: 0.5em solid black;
+    height: 98%;
+}
+
+/*barra de navegacion entre paginas*/
+.swap-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(30, 165, 82);
+}
+
+.pines {
+    display: flex;
+    align-items: center;
+    background-color: rgb(187, 255, 0);
+}
+
+.swap {
+    margin-left: 0.5em;
+    background-color: rgb(160, 160, 160);
+    height: 5em;
+    width: 0.3em;
+}
+
+.pin-uno {
+    background-color: rgb(0, 0, 0);
+    border-radius: 5%;
+}
+
+/*Fin de barra de Navegacion*/
