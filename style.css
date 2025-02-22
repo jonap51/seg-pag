@@ -7,16 +7,16 @@
 }
 
 body {
-    display: flex;
     padding: 0 3em;
     position: relative;
     height: 100vh;
 
+
 }
 
 .back {
+    width: 43%;
     height: 100%;
-    width: 40%;
     background-color: rgb(234, 204, 173);
     position: absolute;
     z-index: -1;
@@ -151,8 +151,6 @@ section {
     flex-basis: 45%;
     flex-direction: column;
     justify-content: center;
-    background-color: brown;
-    height: auto;
 }
 
 h1 {
@@ -185,24 +183,22 @@ h1 {
 
 /*INICIO sección derecha*/
 
+.seccion-principal {
+    height: 88.3vh;
+}
+
 .right-container {
     flex: 1;
     margin: 0;
     display: flex;
     justify-content: space-between;
-    background-color: rgb(218, 130, 42);
-    height: auto;
 }
 
 
-.image-container {
-    background-color: rgb(105, 105, 236);
-}
 
 
 .img-edt {
-    border: 0.5em solid black;
-    height: auto;
+    height: 100%;
 }
 
 /*barra de navegacion entre paginas*/
@@ -210,13 +206,11 @@ h1 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: rgb(30, 165, 82);
 }
 
 .pines {
     display: flex;
     align-items: center;
-    background-color: rgb(187, 255, 0);
 }
 
 .swap {
