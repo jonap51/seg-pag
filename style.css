@@ -10,6 +10,7 @@ body {
     padding: 0 3em;
     position: relative;
     height: 100vh;
+    background-color: #fff;
 
 
 }
@@ -17,7 +18,7 @@ body {
 .back {
     width: 43%;
     height: 100%;
-    background-color: rgb(234, 204, 173);
+    background-color: #eaccad;
     position: absolute;
     z-index: -1;
     right: 0;
@@ -55,7 +56,7 @@ nav {
 }
 
 a {
-    color: black;
+    color: #000000;
     text-decoration: none;
     font-size: 1.1rem;
 }
@@ -99,21 +100,21 @@ Header Derecho*/
 
 .notification {
     position: absolute;
-    background-color: white;
+    background-color: #fae9e9;
     font-size: 0.6rem;
     display: flex;
     justify-content: center;
     align-items: start;
     width: 1.25em;
     height: 1.25em;
-    border: 0.1em solid black;
+    border: 0.1em solid #000000;
     border-radius: 50%;
     right: -0.5em;
     top: 0;
 }
 
 .divider {
-    background-color: rgb(150, 150, 150);
+    background-color: #969696;
     width: 0.12em;
 }
 
@@ -133,7 +134,7 @@ Header Derecho*/
 }
 
 .sign-up {
-    border: 0.15em solid black;
+    border: 0.15em solid #000000;
 }
 
 /* FIN
@@ -150,34 +151,46 @@ section {
     display: flex;
     flex-basis: 45%;
     flex-direction: column;
-    justify-content: center;
+    height: 100%;
 }
 
 h1 {
+    flex: 1;
     font-weight: 400;
     font-size: 6rem;
-    margin-bottom: 0.2em;
-}
-
-.button-shop {
-    border: 0.1em solid black;
-    font-size: 2rem;
-    margin-left: 0;
-    margin-bottom: 2em;
-}
-
-.detail-container {
-    display: flex;
-    margin: 2em 0;
+    margin-top: 2em;
 }
 
 .button-container {
-    margin: 2em 0;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin: 3em 0;
 }
+
+.button-shop {
+    border: 0.1em solid #000000;
+    font-size: 1.4rem;
+    padding: 0.6em 1.3em;
+    background-color: #fff;
+    font-weight: 600;
+}
+
+
+
+.detail-container {
+    flex: 1;
+    width: 65%;
+    margin-top: 5em;
+    margin-bottom: 2em;
+    height: 100%;
+}
+
 
 .detail {
     display: flex;
-    font-size: 1.5rem;
+    justify-content: end;
+    font-size: 1.3rem;
     font-style: normal;
 }
 
@@ -215,13 +228,13 @@ h1 {
 
 .swap {
     margin-left: 0.5em;
-    background-color: rgb(160, 160, 160);
+    background-color: #a0a0a0;
     height: 5em;
     width: 0.3em;
 }
 
 .pin-uno {
-    background-color: rgb(0, 0, 0);
+    background-color: #000000;
     border-radius: 5%;
 }
 
