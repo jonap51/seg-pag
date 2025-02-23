@@ -4,10 +4,11 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    padding: 0 3em;
+    padding: 0 4.5em;
     position: relative;
     height: 100vh;
     background-color: #fff;
@@ -16,7 +17,7 @@ body {
 }
 
 .back {
-    width: 43%;
+    width: 44%;
     height: 100%;
     background-color: #eaccad;
     position: absolute;
@@ -53,12 +54,41 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+
+
 }
 
 a {
     color: #000000;
     text-decoration: none;
     font-size: 1.1rem;
+    position: relative;
+}
+
+
+a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0.11em;
+    bottom: 0;
+    left: 1%;
+    background-color: #000;
+    /* Color inicial del subrayado */
+    transition: all 0.3s ease-in-out;
+    /* Transición suave */
+}
+
+/* Estilo al hacer hover */
+a:hover::after {
+    width: 100%;
+    left: 0;
+    /* Color del subrayado al hacer hover */
+}
+
+/*
+a:hover {
+    text-decoration: underline;
 }
 
 /* FIN
@@ -130,11 +160,23 @@ Header Derecho*/
     background: none;
     padding: 0.4em 1.25em;
     border: none;
+    border: 0.15em solid transparent;
     font-size: 1rem;
+    box-sizing: border-box;
 }
 
 .sign-up {
-    border: 0.15em solid #000000;
+    border: 0.15em solid #000;
+
+
+}
+
+.sign-up:hover,
+.sign-in:hover {
+    border: 0.15em solid #fff;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
 }
 
 /* FIN
@@ -169,7 +211,7 @@ h1 {
 }
 
 .button-shop {
-    border: 0.1em solid #000000;
+    border: 0.1em solid #000;
     font-size: 1.4rem;
     padding: 0.6em 1.3em;
     background-color: #fff;
@@ -193,6 +235,15 @@ h1 {
     font-size: 1.3rem;
     font-style: normal;
 }
+
+.button-shop:hover {
+    border: 0.1em solid #fff;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+
+}
+
 
 /*INICIO sección derecha*/
 
